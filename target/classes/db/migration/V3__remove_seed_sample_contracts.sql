@@ -1,0 +1,14 @@
+DELETE FROM contracts
+WHERE award_id IN (
+    'HT940216C0001',
+    'N0001923C0021',
+    'W31P4Q19C0018',
+    'FA867818C0002',
+    'FA873021F0050'
+);
+
+DELETE FROM vendors
+WHERE id NOT IN (
+    SELECT DISTINCT vendor_id
+    FROM contracts
+);

@@ -194,3 +194,13 @@ I first implemented risk scoring directly inside RiskService to keep the initial
 - The README should explain architecture, endpoints, setup, tests, and future work.
 
 - The interview explanation connects the technical build to the business/domain problem.
+
+- V3__remove_seed_sample_contracts.sql removes the original seed contracts.
+
+- The current contracts output is populated by USAspending ingestion.
+
+- HT940216C0001 was originally seeded, deleted by V3, and reinserted from USAspending.
+
+- Removing seed data makes the project more honest for interview discussion.
+
+- The project can still use Flyway seed data during development, but the final demo data comes f
