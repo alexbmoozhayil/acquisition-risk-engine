@@ -1,2 +1,5 @@
-acquisition_risk_engine/HealthController.class
 acquisition_risk_engine/AcquisitionRiskEngineApplication.class
+acquisition_risk_engine/contracts/ContractResponse.class
+acquisition_risk_engine/contracts/ContractController.class
+acquisition_risk_engine/HealthController.class
+acquisition_risk_engine/contracts/ContractRepository.class

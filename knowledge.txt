@@ -47,3 +47,25 @@
 - PostgreSQL is running in Docker as acquisition-risk-postgres.
 
 - The app connects to PostgreSQL using JDBC through application.properties.
+
+
+I added PostgreSQL as the structured data store and used Flyway to manage schema changes through versioned SQL migrations. Instead of manually creating tables, the database schema is defined in code and automatically applied when the Spring Boot app starts. This makes the backend easier to reproduce, test, and deploy.
+
+
+- V2__seed_sample_contracts.sql inserts sample contract data.
+
+- Flyway runs V2 after V1 because migrations run in version order.
+
+- JdbcTemplate lets Java run SQL queries against PostgreSQL.
+
+- A repository class handles database access.
+
+- A controller class handles HTTP requests.
+
+- ContractResponse is a Java record used for the API response shape.
+
+- GET /contracts reads contract rows from PostgreSQL and returns JSON.
+
+- SQL joins combine contracts with vendor and agency names.
+
+- We used seed data before external API ingestion to test one layer at a time.
