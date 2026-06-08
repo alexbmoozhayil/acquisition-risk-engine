@@ -25,3 +25,25 @@
 - Spring Boot can convert a Java Map into a JSON response.
 
 - The /health endpoint verifies that the service is running.
+
+
+
+
+
+- A database migration is a versioned SQL file that changes the database schema.
+
+- Flyway runs migration files automatically when the Spring Boot app starts.
+
+- V1__create_initial_tables.sql is the first migration for this project.
+
+- Flyway created the agencies, vendors, and contracts tables.
+
+- flyway_schema_history tracks which migrations already ran.
+
+- Spring Boot needs spring-boot-starter-flyway for Flyway integration.
+
+- The database schema is now managed through code instead of manual SQL steps.
+
+- PostgreSQL is running in Docker as acquisition-risk-postgres.
+
+- The app connects to PostgreSQL using JDBC through application.properties.

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: acquisition-risk-postgres
+    environment:
+      POSTGRES_DB: acquisition_risk
+      POSTGRES_USER: acquisition_user
+      POSTGRES_PASSWORD: acquisition_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - acquisition_risk_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  acquisition_risk_postgres_data:
