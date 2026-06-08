@@ -3,6 +3,10 @@
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/contracts/ContractController.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/contracts/ContractRepository.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/contracts/ContractResponse.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/RiskController.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/RiskService.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/RiskSignalResponse.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/VendorRiskResponse.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/vendors/VendorController.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/vendors/VendorRepository.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/vendors/VendorResponse.java

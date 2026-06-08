@@ -104,3 +104,33 @@ I added PostgreSQL as the structured data store and used Flyway to manage schema
 - Nested endpoints are useful when one resource belongs to another resource.
 
 - Vendor contract history is needed before calculating vendor risk.
+
+
+
+- GET /vendors/{vendorId}/risk returns an explainable vendor risk profile.
+
+- RiskService contains business logic for risk scoring.
+
+- A service class sits between controllers and repositories.
+
+- Controllers handle HTTP requests.
+
+- Repositories handle database access.
+
+- Services handle business rules.
+
+- Deterministic risk rules are easier to test and explain than LLM-generated scores.
+
+- HIGH_VALUE_CONTRACT flags vendors with contracts above a configured dollar threshold.
+
+- MULTIPLE_CONTRACTS flags vendors with multiple contracts in the database.
+
+- ENDED_CONTRACT flags vendors with at least one contract that already ended.
+
+- SPARSE_DESCRIPTION flags contracts with limited description detail.
+
+- The risk score is capped at 100.
+
+- Risk level maps the numeric score to LOW, MEDIUM, or HIGH.
+
+- These risk signals are review indicators, not proof that a vendor is unsafe.
