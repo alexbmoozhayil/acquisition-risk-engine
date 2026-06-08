@@ -69,3 +69,22 @@ I added PostgreSQL as the structured data store and used Flyway to manage schema
 - SQL joins combine contracts with vendor and agency names.
 
 - We used seed data before external API ingestion to test one layer at a time.
+
+
+- GET /vendors returns vendor-level summary data.
+
+- VendorResponse is the JSON response shape for vendors.
+
+- VendorRepository runs SQL for vendor queries.
+
+- LEFT JOIN keeps vendors even if they have no contracts.
+
+- COUNT counts contracts per vendor.
+
+- SUM adds total contract value per vendor.
+
+- COALESCE replaces null with 0.
+
+- GROUP BY creates one summary row per vendor.
+
+- Vendor-level summaries prepare us for vendor risk scoring.

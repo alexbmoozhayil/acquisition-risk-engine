@@ -1,5 +1,8 @@
+acquisition_risk_engine/vendors/VendorResponse.class
+acquisition_risk_engine/vendors/VendorController.class
 acquisition_risk_engine/AcquisitionRiskEngineApplication.class
 acquisition_risk_engine/contracts/ContractResponse.class
 acquisition_risk_engine/contracts/ContractController.class
 acquisition_risk_engine/HealthController.class
+acquisition_risk_engine/vendors/VendorRepository.class
 acquisition_risk_engine/contracts/ContractRepository.class
