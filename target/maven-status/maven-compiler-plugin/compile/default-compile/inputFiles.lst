@@ -1,8 +1,15 @@
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/AcquisitionRiskEngineApplication.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/HealthController.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/config/JacksonConfig.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/contracts/ContractController.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/contracts/ContractRepository.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/contracts/ContractResponse.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/ingestion/ContractIngestionRepository.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/ingestion/UsaSpendingClient.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/ingestion/UsaSpendingContractRecord.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/ingestion/UsaSpendingIngestionController.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/ingestion/UsaSpendingIngestionResult.java
+/Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/ingestion/UsaSpendingIngestionService.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/RiskController.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/RiskService.java
 /Users/alexmoozhayil/Developer/projects/java/acquisition-risk-engine/src/main/java/acquisition_risk_engine/risk/RiskSignalResponse.java

@@ -186,3 +186,11 @@ I added unit tests for the risk scoring service so the business rules can be val
 - Separating rules makes the risk engine easier to extend and test.
 
 I first implemented risk scoring directly inside RiskService to keep the initial version simple. After the endpoint worked and tests passed, I refactored each scoring rule into its own RiskRule class. RiskService now orchestrates a list of rules injected by Spring. This makes the design easier to extend because adding a new risk signal only requires adding a new class, not rewriting the core service.
+
+- README.md explains what the project does and how to run it.
+
+- A good README makes a project easier to review during interviews.
+
+- The README should explain architecture, endpoints, setup, tests, and future work.
+
+- The interview explanation connects the technical build to the business/domain problem.
