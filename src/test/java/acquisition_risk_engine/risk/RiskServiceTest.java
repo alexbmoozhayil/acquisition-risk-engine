@@ -2,6 +2,11 @@ package acquisition_risk_engine.risk;
 
 import acquisition_risk_engine.contracts.ContractRepository;
 import acquisition_risk_engine.contracts.ContractResponse;
+import acquisition_risk_engine.risk.rules.EndedContractRiskRule;
+import acquisition_risk_engine.risk.rules.HighValueContractRiskRule;
+import acquisition_risk_engine.risk.rules.MultipleContractsRiskRule;
+import acquisition_risk_engine.risk.rules.RiskRule;
+import acquisition_risk_engine.risk.rules.SparseDescriptionRiskRule;
 import acquisition_risk_engine.vendors.VendorRepository;
 import acquisition_risk_engine.vendors.VendorResponse;
 import org.junit.jupiter.api.Test;
@@ -22,7 +27,11 @@ class RiskServiceTest {
         VendorRepository vendorRepository = mock(VendorRepository.class);
         ContractRepository contractRepository = mock(ContractRepository.class);
 
-        RiskService riskService = new RiskService(vendorRepository, contractRepository);
+        RiskService riskService = new RiskService(
+                vendorRepository,
+                contractRepository,
+                defaultRiskRules()
+        );
 
         VendorResponse vendor = new VendorResponse(
                 2L,
@@ -86,7 +95,11 @@ class RiskServiceTest {
         VendorRepository vendorRepository = mock(VendorRepository.class);
         ContractRepository contractRepository = mock(ContractRepository.class);
 
-        RiskService riskService = new RiskService(vendorRepository, contractRepository);
+        RiskService riskService = new RiskService(
+                vendorRepository,
+                contractRepository,
+                defaultRiskRules()
+        );
 
         VendorResponse vendor = new VendorResponse(
                 5L,
@@ -128,7 +141,11 @@ class RiskServiceTest {
         VendorRepository vendorRepository = mock(VendorRepository.class);
         ContractRepository contractRepository = mock(ContractRepository.class);
 
-        RiskService riskService = new RiskService(vendorRepository, contractRepository);
+        RiskService riskService = new RiskService(
+                vendorRepository,
+                contractRepository,
+                defaultRiskRules()
+        );
 
         when(vendorRepository.findById(999L)).thenReturn(Optional.empty());
 
@@ -141,5 +158,14 @@ class RiskServiceTest {
 
         verify(vendorRepository).findById(999L);
         verifyNoInteractions(contractRepository);
+    }
+
+    private List<RiskRule> defaultRiskRules() {
+        return List.of(
+                new HighValueContractRiskRule(),
+                new MultipleContractsRiskRule(),
+                new EndedContractRiskRule(),
+                new SparseDescriptionRiskRule()
+        );
     }
 }
