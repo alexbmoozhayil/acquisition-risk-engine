@@ -88,3 +88,19 @@ I added PostgreSQL as the structured data store and used Flyway to manage schema
 - GROUP BY creates one summary row per vendor.
 
 - Vendor-level summaries prepare us for vendor risk scoring.
+
+
+
+- GET /vendors/{vendorId}/contracts returns contracts for one vendor.
+
+- @PathVariable reads values from the URL path.
+
+- WHERE v.id = ? filters the SQL query by vendor ID.
+
+- JdbcTemplate passes the vendor ID as a query parameter.
+
+- Query parameters are safer than building SQL strings manually.
+
+- Nested endpoints are useful when one resource belongs to another resource.
+
+- Vendor contract history is needed before calculating vendor risk.
