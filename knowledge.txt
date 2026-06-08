@@ -1,0 +1,27 @@
+# Acquisition Risk Engine Knowledge
+
+- This project is a Java companion to Acquisition Intel.
+
+- Acquisition Intel focused on RAG, search, graph, and AI workflows.
+
+- Acquisition Risk Engine focuses on Java, Spring Boot, SQL, and risk scoring.
+
+- Spring Boot is the Java backend framework for this project.
+
+- Spring Boot plays a similar role to FastAPI in the Python project.
+
+- Maven manages Java dependencies and build commands.
+
+- The Maven wrapper, mvnw, lets the project run Maven consistently.
+
+- spring-boot-starter-web adds REST API support and an embedded web server.
+
+- A controller receives HTTP requests and returns HTTP responses.
+
+- @RestController marks a Java class as a REST API controller.
+
+- @GetMapping("/health") maps GET /health to a Java method.
+
+- Spring Boot can convert a Java Map into a JSON response.
+
+- The /health endpoint verifies that the service is running.
