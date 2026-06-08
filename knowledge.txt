@@ -134,3 +134,30 @@ I added PostgreSQL as the structured data store and used Flyway to manage schema
 - Risk level maps the numeric score to LOW, MEDIUM, or HIGH.
 
 - These risk signals are review indicators, not proof that a vendor is unsafe.
+
+
+- Unit tests check one piece of logic in isolation.
+
+- RiskService can be tested without starting the server.
+
+- RiskService can be tested without connecting to PostgreSQL.
+
+- Mockito creates fake versions of dependencies called mocks.
+
+- Mock repositories let tests focus on business logic instead of database access.
+
+- when(...).thenReturn(...) defines fake repository behavior.
+
+- assertEquals checks expected output values.
+
+- assertThrows checks expected error behavior.
+
+- verify checks that a mock method was called.
+
+- verifyNoInteractions checks that a dependency was not used.
+
+- Automated tests protect risk rules from accidental changes.
+
+- Maven reported 4 tests because the project has 3 RiskService tests plus the generated Spring Boot context test.
+
+I added unit tests for the risk scoring service so the business rules can be validated independently of the API and database. I used Mockito to mock the repositories, which lets the tests focus only on the scoring logic. This makes the risk engine easier to maintain because changes to scoring rules can be checked automatically with ./mvnw test.
